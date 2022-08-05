@@ -1,10 +1,10 @@
 import { Component } from 'react';
 
-import AppInfo from '../../components/AppInfo/AppInfo';
-import SearchPanel from '../SearchPanel/SearchPanel';
-import AppFilter from '../../components/AppFilter/AppFilter';
-import EmployeesList from '../../components/EmployeesList/EmployeesList';
-import EmployeesAddForm from '../EmployeesAddForm/EmployeesAddForm';
+import { AppInfo } from '../../components/AppInfo';
+import { SearchPanel } from '../SearchPanel';
+import { AppFilter } from '../../components/AppFilter';
+import { EmployeesList } from '../../components/EmployeesList';
+import { EmployeesAddForm } from '../EmployeesAddForm';
 
 import './App.css';
 
@@ -100,7 +100,7 @@ class App extends Component {
 	}
 
 	render() {
-		const { data, term, filter } = this.state;	
+		const { data, term, filter } = this.state;
 
 		const employees = data.length;
 		const increased = data.filter(item => item.increase).length;
@@ -130,4 +130,4 @@ class App extends Component {
 	}
 }
 
-export default App;
+export { App };

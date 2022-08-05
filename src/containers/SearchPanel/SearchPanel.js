@@ -1,4 +1,5 @@
 import { Component } from 'react';
+
 import './SearchPanel.css';
 
 class SearchPanel extends Component {
@@ -13,7 +14,7 @@ class SearchPanel extends Component {
 		const term = e.target.value;
 		this.setState({ term });
 		this.props.onUpdateSearch(term);
-	}
+	};
 
 	render() {
 		return (
@@ -22,8 +23,8 @@ class SearchPanel extends Component {
 				placeholder="Find employees"
 				value={this.state.term}
 				onChange={this.onUpdateSearch} />
-		)
+		);
 	}
 }
 
-export default SearchPanel;
+export { SearchPanel };

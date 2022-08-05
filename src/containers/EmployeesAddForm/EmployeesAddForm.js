@@ -1,4 +1,5 @@
 import { Component } from 'react';
+
 import './EmployeesAddForm.css';
 
 class EmployeesAddForm extends Component {
@@ -15,18 +16,18 @@ class EmployeesAddForm extends Component {
 		this.setState({
 			[e.target.name]: e.target.value
 		});
-	}
+	};
 
 	onSubmit = (e) => {
 		e.preventDefault();
-		const {name, salary} = this.state;
+		const { name, salary } = this.state;
 
 		if (name.length < 3 || !salary) {
 			this.setState({
 				errorMessage: 'Please fill in all fields.'
 			});
 			return;
-		} 
+		}
 		else if (name.length > 3 || salary) {
 			this.setState({
 				errorMessage: ''
@@ -38,10 +39,10 @@ class EmployeesAddForm extends Component {
 			name: '',
 			salary: ''
 		});
-	}
+	};
 
 	render() {
-		const {name, salary, errorMessage} = this.state;
+		const { name, salary, errorMessage } = this.state;
 
 		return (
 			<div className="app-add-form">
@@ -52,13 +53,13 @@ class EmployeesAddForm extends Component {
 					onSubmit={this.onSubmit}>
 					<input type="text"
 						className="form-control new-post-label"
-						placeholder="What is his name?" 
+						placeholder="What is his name?"
 						name="name"
 						value={name}
 						onChange={this.onValueChange} />
 					<input type="number"
 						className="form-control new-post-label"
-						placeholder="Salary in dollars" 
+						placeholder="Salary in dollars"
 						name="salary"
 						value={salary}
 						onChange={this.onValueChange} />
@@ -68,8 +69,8 @@ class EmployeesAddForm extends Component {
 					</button>
 				</form>
 			</div>
-		)
+		);
 	}
 }
 
-export default EmployeesAddForm;
+export { EmployeesAddForm };
