@@ -17,14 +17,14 @@ const AppFilter = ({ filter, onFilterSelect }) => {
 				onClick={() => onFilterSelect(name)}>
 				{label}
 			</button>
-		)
+		);
 	});
 
 	return (
 		<div className="btn-group">
 			{buttons}
 		</div>
-	)
-}
+	);
+};
 
-export default AppFilter;
+export { AppFilter };

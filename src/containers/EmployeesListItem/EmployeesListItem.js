@@ -1,4 +1,5 @@
 import { Component } from 'react';
+
 import './EmployeesListItem.css';
 
 class EmployeesListItem extends Component {
@@ -15,7 +16,7 @@ class EmployeesListItem extends Component {
 			currentSalary: changedSalary
 		});
 		this.props.onChangeSalary(this.props.name, changedSalary);
-	}
+	};
 
 	render() {
 		const { name, salary, increase, rise, onDeleteItem, onToggleProp } = this.props;
@@ -51,8 +52,8 @@ class EmployeesListItem extends Component {
 					<i className="fas fa-star"></i>
 				</div>
 			</li>
-		)
+		);
 	}
 }
 
-export default EmployeesListItem;
+export { EmployeesListItem };
