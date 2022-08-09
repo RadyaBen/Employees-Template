@@ -1,22 +1,22 @@
-<div align='center'>
-  <br>
-  <h1>Employees Template</h1>
+<div align="center">
+	<br>
+	<h1>Employees Template</h1>
 </div>
 
 <!-- PROJECT SHIELDS -->
-<div align='center'>
+<div align="center">
 
-  <a href="">![GitHub last commit](https://img.shields.io/github/last-commit/RadyaBen/Employees-Template?style=plastic)</a>
-  <a href="">![GitHub repo size](https://img.shields.io/github/repo-size/RadyaBen/Employees-Template?style=plastic)</a>
-  <a href="">![GitHub language count](https://img.shields.io/github/languages/count/RadyaBen/Employees-Template?style=plastic)</a>
-  <a href="">![GitHub top language](https://img.shields.io/github/languages/top/RadyaBen/Employees-Template?style=plastic)</a>
+   ![GitHub last commit](https://img.shields.io/github/last-commit/RadyaBen/Employees-Template?style=plastic)
+   ![GitHub repo size](https://img.shields.io/github/repo-size/RadyaBen/Employees-Template?style=plastic)
+   ![GitHub language count](https://img.shields.io/github/languages/count/RadyaBen/Employees-Template?style=plastic)
+   ![GitHub top language](https://img.shields.io/github/languages/top/RadyaBen/Employees-Template?style=plastic)
 
 </div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src='src/assets/image/app-screenshot.png' height='auto' width='600' alt='Employees Template ' title='Employees Template'>
+<img src="src/assets/image/app-screenshot.png" height="auto" alt="Employees Template" title="Employees Template">
 
 Employees Template is a web application whose main goal is to keep track of company employees. With this application, a user can see how many employees there are in a company and who received a raise. It also allows a user to add, delete, search, and filter employees by specific filters. No matter what the users' needs are, the employees' template allows them to bring together all of the information they need in a single location.
 
